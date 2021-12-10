@@ -33,7 +33,7 @@ h1m4n5hu0p = (
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "REBEL User"
 USER_BOT_WARN_ZERO = "**You were spamming my sweet master's inbox, henceforth you have been blocked by my master's REBELBOT.**\n__Now GTFO, i'm busy__"
 USER_BOT_NO_WARN = (
-    "Hello, This is **REBELBOT Ultra Private Security Protocol⚠️**.\n"
+    "Hello, This is **SanskariBot Ultra Private Security Protocol⚠️**.\n"
     f"This is my master {DEFAULTUSER}'s Inbox\n"
     f"\n**{h1m4n5hu0p}**\n\n"
     "To start a valid conversation\n🔱Register Your Request!🔱\nSend `/start` To Register Your Request\nHopefully u will get a reply🔥"
@@ -41,7 +41,7 @@ USER_BOT_NO_WARN = (
 
 if Var.PRIVATE_GROUP_ID is not None:
 
-    @borg.on(admin_cmd(pattern="allow|.a ?(.*)"))
+    @borg.on(admin_cmd(pattern="a ?(.*)"))
     async def approve_p_m(event):
         if event.fwd_from:
             return
@@ -99,7 +99,7 @@ if Var.PRIVATE_GROUP_ID is not None:
                     await asyncio.sleep(3)
                     await rko.delete()
 
-    @borg.on(admin_cmd(pattern="block ?(.*)"))
+    @borg.on(admin_cmd(pattern="b ?(.*)"))
     async def approve_p_m(event):
         if event.fwd_from:
             return
@@ -145,7 +145,7 @@ if Var.PRIVATE_GROUP_ID is not None:
                 await asyncio.sleep(3)
                 await event.delete()
 
-    @borg.on(admin_cmd(pattern="disallow ?(.*)"))
+    @borg.on(admin_cmd(pattern="d ?(.*)"))
     async def approve_p_m(event):
         if event.fwd_from:
             return
@@ -313,13 +313,13 @@ async def hehehe(event):
 
 
 CmdHelp("pmpermit").add_command(
-    "allow|.a", "<pm use only>", "It allow the user to PM you."
+    "a", "<pm use only>", "It allow the user to PM you."
 ).add_command(
-    "disallow|.da",
+    "d",
     "<pm use only>",
     "It disallows the user to PM. If user crosses the PM limit after disallow he/she will get blocked automatically",
 ).add_command(
-    "block", "<pm use only>", "You know what it does.... Blocks the user"
+    "b", "<pm use only>", "You know what it does.... Blocks the user"
 ).add_command(
     "listallowed|.la", None, "Gives you the list of allowed PM's list"
 ).add_command(
