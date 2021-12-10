@@ -83,7 +83,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             veriler = button(0, sorted(CMD_HELP))
             result = await builder.article(
                 f"Hey! Only use .help please",
-                text=f"**Running SanskariBot**[⚡🔥]({REBEL_help_pic})\n\n__Number of plugins installed__ :`{len(CMD_HELP)}`\n**page:** 1/{veriler[0]}",
+                text=f"**Running ℜ𝔞𝔧𝔰𝔥𝔯𝔢𝔢**[⚡🔥]({REBEL_help_pic})\n\n__Number of plugins installed__ :`{len(CMD_HELP)}`\n**page:** 1/{veriler[0]}",
                 buttons=veriler[1],
                 link_preview=True,
             )
@@ -98,14 +98,14 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         elif event.text == "":
             result = builder.article(
                 "@REBELBOT_SUPPORT",
-                text=f"""**Hey![🤗]({REBEL_help_pic}) This is [SanskariBot](https://t.me/REBELBOT_SUPPORT)\nYou can know more about me from the links given below 👇**""",
+                text=f"""**Hey![🤗]({REBEL_help_pic}) This is [ℜ𝔞𝔧𝔰𝔥𝔯𝔢𝔢](https://t.me/rashreesupport)\nYou can know more about me from the links given below 👇**""",
                 buttons=[
                     [
                         custom.Button.url(
-                            "🔥 CHANNEL 🔥", "https://t.me/REBELBOT_SUPPORT"
+                            "🔥 CHANNEL 🔥", "https://t.me/rashreesupport"
                         ),
                         custom.Button.url(
-                            "⚡ GROUP ⚡", "https://t.me/REBEL_BOT_CHATING"
+                            "⚡ GROUP ⚡", "https://t.me/rashreesupport"
                         ),
                     ],
                     [
@@ -123,14 +123,14 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def page(event):
         if not event.query.user_id == bot.uid:
             return await event.answer(
-                "HELLO THERE. PLEASE MAKE YOUR OWN SanskariBot AND USE. © SANSKARIBOT ™",
+                "HELLO THERE. PLEASE MAKE YOUR OWN ℜ𝔞𝔧𝔰𝔥𝔯𝔢𝔢 AND USE. ©ℜ𝔞𝔧𝔰𝔥𝔯𝔢𝔢 ™",
                 cache_time=0,
                 alert=True,
             )
         page = int(event.data_match.group(1).decode("UTF-8"))
         veriler = button(page, CMD_HELP)
         await event.edit(
-            f"**Legenday AF [SanskariBot 🤘]({REBEL_help_pic})[🤘](https://t.me/REBELBOT_SUPPORT) __Working...__\n\n**Number of modules installed :** `{len(CMD_HELP)}`\n**page:** {page + 1}/{veriler[0]}",
+            f"**Legenday AF [ℜ𝔞𝔧𝔰𝔥𝔯𝔢𝔢 🤘]({REBEL_help_pic})[🤘](https://t.me/rashreesupport) __Working...__\n\n**Number of modules installed :** `{len(CMD_HELP)}`\n**page:** {page + 1}/{veriler[0]}",
             buttons=veriler[1],
             link_preview=True,
         )
@@ -140,13 +140,13 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         if event.query.user_id == bot.uid:
             await delete_REBEL(
                 event,
-                f"⚜️ SanskariBot Menu Provider Is now Closed[⚜️]({REBEL_help_pic})\n\n         **[© REBELBOT ™](t.me/REBELBOT_SUPPORT)**[⚡🔥]({REBEL_help_pic})",
+                f"⚜️ℜ𝔞𝔧𝔰𝔥𝔯𝔢𝔢 Menu Provider Is now Closed[⚜️]({REBEL_help_pic})\n\n         **[©ℜ𝔞𝔧𝔰𝔥𝔯𝔢𝔢 ™](t.me/rashreesupport)**[⚡🔥]({REBEL_help_pic})",
                 5,
                 link_preview=True,
             )
         else:
             REBEL_alert = (
-                "HELLO THERE. PLEASE MAKE YOUR OWN SanskariBot AND USE. © SANSKARIBOT ™"
+                "HELLO THERE. PLEASE MAKE YOUR OWN ℜ𝔞𝔧𝔰𝔥𝔯𝔢𝔢 AND USE. ©ℜ𝔞𝔧𝔰𝔥𝔯𝔢𝔢 ™"
             )
             await event.answer(REBEL_alert, cache_time=0, alert=True)
 
@@ -156,7 +156,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def Information(event):
         if not event.query.user_id == bot.uid:
             return await event.answer(
-                "HELLO THERE. PLEASE MAKE YOUR OWN SanskariBot AND USE. ©SANSKARIBOT ™",
+                "HELLO THERE. PLEASE MAKE YOUR OWN ℜ𝔞𝔧𝔰𝔥𝔯𝔢𝔢 AND USE. ©ℜ𝔞𝔧𝔰𝔥𝔯𝔢𝔢 ™",
                 cache_time=0,
                 alert=True,
             )
@@ -189,7 +189,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
     async def commands(event):
         if not event.query.user_id == bot.uid:
             return await event.answer(
-                "HELLO THERE. PLEASE MAKE YOUR OWN SanskariBot AND USE. ©SANSKARIBOT ™",
+                "HELLO THERE. PLEASE MAKE YOUR OWN ℜ𝔞𝔧𝔰𝔥𝔯𝔢𝔢 AND USE. ©ℜ𝔞𝔧𝔰𝔥𝔯𝔢𝔢 ™",
                 cache_time=0,
                 alert=True,
             )
