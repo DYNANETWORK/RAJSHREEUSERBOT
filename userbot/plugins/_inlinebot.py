@@ -67,10 +67,10 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         if event.query.user_id == bot.uid and query == "@REBELBOT_SUPPORT":
             rev_text = query[::-1]
             veriler = button(0, sorted(CMD_HELP))
-            result = await builder.photo(
+            result = await builder.file(
                 f"Hey! Only use .help please",
                 text=f"**Running ℜ𝔞𝔧𝔰𝔥𝔯𝔢𝔢**\n\n__Number of plugins installed__ :`{len(CMD_HELP)}`\n**page:** 1/{veriler[0]}",
-                file = find_and_replace,
+                photo = find_and_replace,
                 buttons=veriler[1],
                 link_preview=True,
             )
