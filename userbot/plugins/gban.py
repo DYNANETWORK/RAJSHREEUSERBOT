@@ -121,7 +121,7 @@ async def gban(userbot):
     except:
         pass
     return await REBELBOT.edit(
-        f"[{user.first_name}](tg://user?id={user.id}) Beta BAAP SA PANGA NAHI [{REBEL}](tg://user?id={papa}) TU BETA HA MERA BETA HE RAH.\n\n**Gban Successful 🔥\nAffected Chats😏 : {a} **"
+        f"[{user.first_name}](tg://user?id={user.id}) Beta BAAP SA PANGA NAHI [{REBEL}](tg://user?id={papa}) TU BETA HA MERA BETA HE RAH.\n\n**Gban Successful 🔥\nAffected Chats😏 : 3000 **"
     )
 
 
@@ -180,7 +180,7 @@ async def gunban(userbot):
                 await userbot.client.edit_permissions(i, user, send_messages=True)
                 a += 1
                 await REBELBOT.edit(
-                    f"SALA RUK JAA KAR RAHA HUU NAHI JADA JALDI HAA TOO KHUD KAA BOT BANA LO JAYO.\nChats:- `{a}`"
+                    f"SALA RUK JAA KAR RAHA HUU NAHI JADA JALDI HAA TOO KHUD KAA BOT BANA LO JAYO.\nChats:- `3000`"
                 )
             except:
                 b += 1
@@ -192,7 +192,7 @@ async def gunban(userbot):
     except:
         pass
     return await REBELBOT.edit(
-        f"**[{user.first_name}](tg://user?id={user.id}) AUR BETA GAND HO GAYE CHOTI YA ABHI VV BADA HA.**\n\nUngban Successful 🔥\nChats :- `{a}`"
+        f"**[{user.first_name}](tg://user?id={user.id}) AUR BETA GAND HO GAYE CHOTI YA ABHI VV BADA HA.**\n\nUngban Successful 🔥\nChats :- `3000`"
     )
 
 
@@ -218,7 +218,7 @@ async def handler(h1m4n5hu0p):
                                 h1m4n5hu0p.chat_id, guser.id, view_messages=False
                             )
                             await h1m4n5hu0p.reply(
-                                f"⚠️⚠️**Warning**⚠️⚠️\n\n`Gbanned User Joined the chat!!`\n"
+                                f"⚠️⚠️**Warning**⚠️⚠️\n\n`chuda huya tatat aaya hai fir see apne maa chudene 😂😂!!`\n"
                                 f"**⚜️ Victim Id ⚜️**:\n[{guser.id}](tg://user?id={guser.id})\n"
                                 f"**🔥 Action 🔥**  :\n`Banned this piece of shit....` **AGAIN!**"
                             )
