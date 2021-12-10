@@ -1,5 +1,5 @@
 #!/bin/bash
-#   Copyright (C) 2021 REBEL725
+#   Copyright (C) 2021 ❤️ℜ𝔞𝔧𝔰𝔥𝔯𝔢𝔢❤️
 #
 #   Poject REBELBOT is free software: 
 #   you can redistribute it and/or modify it under the terms of the GNU General Public License 
@@ -16,13 +16,9 @@
 
 
 echo """
-                      © 𝙻𝙴𝙶𝙴𝙽𝙳𝙰𝚁𝚈_𝙰𝙵_REBELBOT™
-                          ╔═╦═╦══╦══╦══╦══╦══╦═╦══
-                          ║║║║╔╗║╦╩║║╣╔╗║╔╗║║╠╗╔
-                          ║║║║╠╣REBEL╔║║╣BOT║╔╗║║║║║
-                          ╚╩═╩╩╝╚╩─╚══╩╝╚╩══╩═╝╚
-                     © 𝙻𝙴𝙶𝙴𝙽𝙳𝙰𝚁𝚈_𝙰𝙵_REBELBOT™                       
-                         @REBELBOT_SUPPORT
+                      © 𝙻𝙴𝙶𝙴𝙽𝙳𝙰𝚁𝚈_𝙰𝙵_ℜ𝔞𝔧𝔰𝔥𝔯𝔢𝔢
+                     © 𝙻𝙴𝙶𝙴𝙽𝙳𝙰𝚁𝚈_𝙰𝙵_ℜ𝔞𝔧𝔰𝔥𝔯𝔢𝔢™                       
+                         @rashreesupport
 """
 
 python3 string_session.py
