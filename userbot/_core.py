@@ -39,7 +39,6 @@ async def send(event):
 
 
 @REBELBOT.on(admin_cmd(pattern="install$", outgoing=True))
-@REBELBOT.on(sudo_cmd(pattern="install$", allow_sudo=True))
 async def install(event):
     if event.fwd_from:
         return
@@ -92,7 +91,6 @@ async def install(event):
 
 
 @REBELBOT.on(admin_cmd(pattern=r"uninstall (?P<shortname>\w+)", outgoing=True))
-@REBELBOT.on(sudo_cmd(pattern=r"uninstall (?P<shortname>\w+)", allow_sudo=True))
 async def uninstall(h1m4n5hu0p):
     if h1m4n5hu0p.fwd_from:
         return
@@ -106,40 +104,6 @@ async def uninstall(h1m4n5hu0p):
         await h1m4n5hu0p.edit("Error: %s : %s" % (dir_path, e.strerror))
 
 
-@REBELBOT.on(admin_cmd(pattern=r"unload (?P<shortname>\w+)$"))
-@REBELBOT.on(sudo_cmd(pattern=r"upload (?P<shortname>\w+)$", allow_sudo=True))
-async def unload(event):
-    if event.fwd_from:
-        return
-    shortname = event.pattern_match["shortname"]
-    try:
-        remove_plugin(shortname)
-        await event.edit(f"Successfully unloaded `{shortname}`")
-    except Exception as e:
-        await event.edit(
-            "Successfully unloaded {shortname}\n{}".format(shortname, str(e))
-        )
-
-
-@REBELBOT.on(admin_cmd(pattern=r"load (?P<shortname>\w+)$"))
-@REBELBOT.on(sudo_cmd(pattern=r"load (?P<shortname>\w+)$", allow_sudo=True))
-async def load(event):
-    if event.fwd_from:
-        return
-    shortname = event.pattern_match["shortname"]
-    try:
-        try:
-            remove_plugin(shortname)
-        except BaseException:
-            pass
-        load_module(shortname)
-        await event.edit(f"Successfully loaded `{shortname}`")
-    except Exception as e:
-        await event.edit(
-            f"Sorry, could not load {shortname} because of the following error.\n{str(e)}"
-        )
-
-
 CmdHelp("core").add_command(
     "install",
     "<reply to a .py file>",
@@ -150,14 +114,5 @@ CmdHelp("core").add_command(
     "Uninstalls the given plugin from userbot. To get that again do .restart",
     "uninstall alive",
 ).add_command(
-    "load", "<plugin name>", "Loades the unloaded plugin to your userbot", "load alive"
-).add_command(
-    "unload", "<plugin name>", "Unloads the plugin from your userbot", "unload alive"
-).add_command(
-    "send",
-    "<file name>",
-    "Sends the given file from your userbot server, if any.",
-    "send alive",
-).add_command(
-    "cmds", None, "Gives out the list of modules in REBELBOT."
+    "cmds", None, "Gives out the list of modules in ℜ𝔞𝔧𝔰𝔥𝔯𝔢𝔢."
 ).add()
