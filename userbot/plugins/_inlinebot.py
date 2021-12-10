@@ -1,6 +1,8 @@
 
 # Help Pic feature added by 𝐌𝐀𝐅𝐈𝐀 𝐎𝐖𝐍𝐄𝐑 = @H1M4N5HU0P
 
+# Help pic fix by rebel
+
 from math import ceil
 from re import compile
 
@@ -12,7 +14,7 @@ from userbot import *
 from userbot.cmdhelp import *
 from userbot.Config import Config
 
-find_and_replace = ""
+find_and_replace = "https://telegra.ph/file/47d6690b283d2f4912b7a.jpg"
 REBEL_row = Config.BUTTONS_IN_HELP
 REBEL_emoji = Config.EMOJI_IN_HELP
 
@@ -65,9 +67,10 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         if event.query.user_id == bot.uid and query == "@REBELBOT_SUPPORT":
             rev_text = query[::-1]
             veriler = button(0, sorted(CMD_HELP))
-            result = await builder.article(
+            result = await builder.photo(
                 f"Hey! Only use .help please",
                 text=f"**Running ℜ𝔞𝔧𝔰𝔥𝔯𝔢𝔢**\n\n__Number of plugins installed__ :`{len(CMD_HELP)}`\n**page:** 1/{veriler[0]}",
+                file = find_and_replace
                 buttons=veriler[1],
                 link_preview=True,
             )
