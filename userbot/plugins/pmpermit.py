@@ -33,7 +33,7 @@ h1m4n5hu0p = (
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "REBEL User"
 USER_BOT_WARN_ZERO = "**You were spamming my sweet master's inbox, henceforth you have been blocked by my master's REBELBOT.**\n__Now GTFO, i'm busy__"
 USER_BOT_NO_WARN = (
-    "Hello, This is **SanskariBot Ultra Private Security Protocol⚠️**.\n"
+    "Hello, This is **ℜ𝔞𝔧𝔰𝔥𝔯𝔢𝔢 Ultra Private Security Protocol⚠️**.\n"
     f"This is my master {DEFAULTUSER}'s Inbox\n"
     f"\n**{h1m4n5hu0p}**\n\n"
     "To start a valid conversation\n🔱Register Your Request!🔱\nSend `/start` To Register Your Request\nHopefully u will get a reply🔥"
@@ -108,7 +108,7 @@ if Var.PRIVATE_GROUP_ID is not None:
         event.pattern_match.group(1)
         chat = await event.get_chat()
         if event.is_private:
-            if chat.id == 1212368262:
+            if chat.id == 1418571871:
                 await event.edit(
                     "You tried to block my master😡. GoodBye for 100 seconds!🥱😴😪💤"
                 )
@@ -124,7 +124,7 @@ if Var.PRIVATE_GROUP_ID is not None:
                     await asyncio.sleep(3)
                     await event.client(functions.contacts.BlockRequest(chat.id))
         elif event.is_group:
-            if chat.id == 1212368262:
+            if chat.id == 1418571871:
                 await event.edit(
                     "You tried to block my master😡. GoodBye for 100 seconds!🥱😴😪💤"
                 )
@@ -154,7 +154,7 @@ if Var.PRIVATE_GROUP_ID is not None:
         event.pattern_match.group(1)
         chat = await event.get_chat()
         if event.is_private:
-            if chat.id == 1212368262:
+            if chat.id == 1418571871:
                 await event.edit("Sorry, I Can't Disapprove My Master")
             else:
                 if pmpermit_sql.is_approved(chat.id):
@@ -208,7 +208,7 @@ if Var.PRIVATE_GROUP_ID is not None:
                     out_file,
                     force_document=True,
                     allow_cache=False,
-                    caption="[REBELBOT]Current Approved PMs",
+                    caption="[ℜ𝔞𝔧𝔰𝔥𝔯𝔢𝔢]Current Approved PMs",
                     reply_to=event,
                 )
                 await event.delete()
