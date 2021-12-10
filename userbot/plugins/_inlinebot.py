@@ -1,19 +1,3 @@
-#    Copyright (C) @SupRemE_AnanD 2021-2022
-#    This program is free software: you can redistribute it and/or modify
-#    it under the terms of the GNU Affero General Public License as published by
-#    the Free Software Foundation, either version 3 of the License, or
-#
-#    This program is distributed in the hope that it will be useful,
-#    but WITHOUT ANY WARRANTY; without even the implied warranty of
-#    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-#    GNU Affero General Public License for more details.
-#
-#    You should have received a copy of the GNU Affero General Public License
-#    along with this program.  If not, see <https://www.gnu.org/licenses/>.
-#
-#
-#    This Inline Helper Code is solely owned by @SupRemE_AnanD
-#    You Should Not Copy This Code Without Proper Permission.
 
 # Help Pic feature added by 𝐌𝐀𝐅𝐈𝐀 𝐎𝐖𝐍𝐄𝐑 = @H1M4N5HU0P
 
@@ -28,7 +12,7 @@ from userbot import *
 from userbot.cmdhelp import *
 from userbot.Config import Config
 
-REBEL_help_pic = Config.HELP_PIC
+find_and_replace = ""
 REBEL_row = Config.BUTTONS_IN_HELP
 REBEL_emoji = Config.EMOJI_IN_HELP
 
@@ -83,7 +67,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
             veriler = button(0, sorted(CMD_HELP))
             result = await builder.article(
                 f"Hey! Only use .help please",
-                text=f"**Running ℜ𝔞𝔧𝔰𝔥𝔯𝔢𝔢**[⚡🔥]({REBEL_help_pic})\n\n__Number of plugins installed__ :`{len(CMD_HELP)}`\n**page:** 1/{veriler[0]}",
+                text=f"**Running ℜ𝔞𝔧𝔰𝔥𝔯𝔢𝔢**\n\n__Number of plugins installed__ :`{len(CMD_HELP)}`\n**page:** 1/{veriler[0]}",
                 buttons=veriler[1],
                 link_preview=True,
             )
@@ -98,7 +82,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         elif event.text == "":
             result = builder.article(
                 "@REBELBOT_SUPPORT",
-                text=f"""**Hey![🤗]({REBEL_help_pic}) This is [ℜ𝔞𝔧𝔰𝔥𝔯𝔢𝔢](https://t.me/rashreesupport)\nYou can know more about me from the links given below 👇**""",
+                text=f"""**Hey! This is [ℜ𝔞𝔧𝔰𝔥𝔯𝔢𝔢](https://t.me/rashreesupport)\nYou can know more about me from the links given below 👇**""",
                 buttons=[
                     [
                         custom.Button.url(
@@ -130,7 +114,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         page = int(event.data_match.group(1).decode("UTF-8"))
         veriler = button(page, CMD_HELP)
         await event.edit(
-            f"**Legenday AF [ℜ𝔞𝔧𝔰𝔥𝔯𝔢𝔢 🤘]({REBEL_help_pic})[🤘](https://t.me/rashreesupport) __Working...__\n\n**Number of modules installed :** `{len(CMD_HELP)}`\n**page:** {page + 1}/{veriler[0]}",
+            f"**Legenday AF [ℜ𝔞𝔧𝔰𝔥𝔯𝔢𝔢 🤘](https://t.me/rashreesupport) __Working...__\n\n**Number of modules installed :** `{len(CMD_HELP)}`\n**page:** {page + 1}/{veriler[0]}",
             buttons=veriler[1],
             link_preview=True,
         )
@@ -140,7 +124,7 @@ if Var.TG_BOT_USER_NAME_BF_HER is not None and tgbot is not None:
         if event.query.user_id == bot.uid:
             await delete_REBEL(
                 event,
-                f"⚜️ℜ𝔞𝔧𝔰𝔥𝔯𝔢𝔢 Menu Provider Is now Closed[⚜️]({REBEL_help_pic})\n\n         **[©ℜ𝔞𝔧𝔰𝔥𝔯𝔢𝔢 ™](t.me/rashreesupport)**[⚡🔥]({REBEL_help_pic})",
+                f"⚜️ℜ𝔞𝔧𝔰𝔥𝔯𝔢𝔢 Menu Provider Is now Closed⚜️\n\n         **[©ℜ𝔞𝔧𝔰𝔥𝔯𝔢𝔢 ™](t.me/rashreesupport)**[⚡🔥]({REBEL_help_pic})",
                 5,
                 link_preview=True,
             )
