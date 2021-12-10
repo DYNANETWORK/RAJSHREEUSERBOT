@@ -20,8 +20,8 @@ echo """
 
 
 
-                       𝓛𝓔𝓖𝓔𝓝𝓓𝓐𝓡𝓨 𝓐𝓕 REBELBOT !!
-                                          @REBELBOT_SUPPORT
+                       𝓛𝓔𝓖𝓔𝓝𝓓𝓐𝓡𝓨 𝓐𝓕 ℜ𝔞𝔧𝔰𝔥𝔯𝔢𝔢 !!
+                                          @rashreesupport
 """
 
 python3 -m userbot
