@@ -29,9 +29,9 @@ else:
             "TG_BOT_TOKEN", api_id=Var.APP_ID, api_hash=Var.API_HASH
         ).start(bot_token=Var.TG_BOT_TOKEN_BF_HER)
         print("Initialisation finished with no errors")
-        print("🔰ՏTᗩᖇT ᖇᗴᗷᗴᒪᗷOT🔰")
+        print("🔰𝘴𝓽ꪖ𝘳𝓽 ℜ𝔞𝔧𝔰𝔥𝔯𝔢𝔢🔰")
         bot.loop.run_until_complete(add_bot(Var.TG_BOT_USER_NAME_BF_HER))
-        print("⚡ᖇᗴᗷᗴᒪᗷOT ՏTᗩᖇTᑌᑭ ᑕOᗰᑭᒪᗴTᗴᗪ⚡")
+        print("⚡ᖇᗩᒍՏᕼᖇᗴᗴ ՏTᗩᖇTᑌᑭ ᑕOᗰᑭᒪᗴTᗴᗪ⚡")
     else:
         bot.start()
 
@@ -48,7 +48,7 @@ for name in files:
 
 
 print(
-    f"""Hello sir i am REBELBOT!! REBELBOT VERSION :- {REBELversion} YOUR REBELBOT IS READY! FOR CHECK YOUR BOT WORKING OR NOT PLEASE TYPE (.alive/.ping) ENJOY YOUR BOT! JOIN FOR MORE FUTURE UPDATES @REBELBOT_SUPPORT ."""
+    f"""𝚂𝚃𝙰𝚁𝚃 𝚈𝙾𝚄𝚁 𝙱𝙾𝚃 𝙽𝙾𝚆 𝙲𝙷𝙴𝙲𝙺 [.alive/.ping] 𝚅𝙴𝚁𝚂𝙸𝙾𝙽 :-{REBELversion}."""
 )
 
 if len(argv) not in (1, 3, 4):
