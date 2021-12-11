@@ -53,8 +53,8 @@ def get_readable_time(seconds: int) -> str:
 uptime = get_readable_time((time.time() - StartTime))
 
 
-@bot.on(admin_cmd(outgoing=True, pattern="rebel$"))
-@bot.on(sudo_cmd(pattern="rebel$", allow_sudo=True))
+@bot.on(admin_cmd(outgoing=True, pattern="rajshree$"))
+@bot.on(sudo_cmd(pattern="rajshree$", allow_sudo=True))
 async def amireallyalive(alive):
     if alive.fwd_from:
         return
@@ -62,10 +62,10 @@ async def amireallyalive(alive):
 
     if REBEL_IMG:
         REBEL_caption = f"**{CUSTOM_ALIVE_TEXT}**\n\n"
-        REBEL_caption += f"≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈\n"
+        REBEL_caption += f"≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈\n"
         REBEL_caption += f"__**𝙱𝙾𝚃 𝚂𝚃𝙰𝚃𝚄𝚂**__\n\n"
-        REBEL_caption += f"**❥︎ 𝚃𝙴𝙻𝙴𝚃𝙷𝙾𝙼 :** `1.15.0`\n"
-        REBEL_caption += f"**❥︎ 𝚁𝙴𝙱𝙴𝙻𝙱𝙾𝚃 :**`{REBELversion}`\n"
+        REBEL_caption += f"**❥︎ 𝚃𝙴𝙻𝙴𝚃𝙷𝙾𝙼 :** `1.24.0`\n"
+        REBEL_caption += f"**❥︎ 𝚁𝙰𝙹𝚂𝙷𝚁𝙴𝙴 :**`{REBELversion}`\n"
         REBEL_caption += f"**❥︎ 𝚄𝙿𝚃𝙸𝙼𝙴   :** `{uptime}\n`"
         REBEL_caption += f"**❥︎ 𝙾𝚆𝙽𝙴𝚁    :** {mention}\n"
         await alive.client.send_file(
@@ -76,10 +76,10 @@ async def amireallyalive(alive):
         await edit_or_reply(
             alive,
             f"**{CUSTOM_ALIVE_TEXT}**\n\n"
-            f"≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈ \n"
+            f"≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈≈ \n"
             f"__**𝙱𝙾𝚃 𝚂𝚃𝙰𝚃𝚄𝚂**__\n\n"
-            f"**❥︎ 𝚃𝙴𝙻𝙴𝚃𝙷𝙾𝙽 :** `1.15.0`\n"
-            f"**❥︎ 𝚁𝙴𝙱𝙴𝙻𝙱𝙾𝚃 :** `{REBELversion}`\n"
+            f"**❥︎ 𝚃𝙴𝙻𝙴𝚃𝙷𝙾𝙽 :** `1.24.0`\n"
+            f"**❥︎ 𝚁𝙰𝙹𝚂𝙷𝚁𝙴𝙴 :** `{REBELversion}`\n"
             f"**❥︎ 𝚄𝙿𝚃𝙸𝙼𝙴      :** `{uptime}\n`"
             f"**❥︎ 𝙾𝚆𝙽𝙴𝚁        :** {mention}\n",
         )
