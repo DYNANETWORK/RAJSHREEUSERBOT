@@ -220,7 +220,7 @@ if Var.RAJSHREE_SESSION is not None:
         if event.sender_id == bot.uid:
             return
 
-        if Var.PRIVATE_GROUP_ID is None:
+        if Var.RAJSHREE_SESSION is None:
             return
 
         if not event.is_private:
@@ -278,7 +278,7 @@ if Var.RAJSHREE_SESSION is not None:
             # the_message += f"Media: {message_media}"
             try:
                 await event.client.send_message(
-                    entity=Var.PRIVATE_GROUP_ID,
+                    entity=Var.RAJSHREE_SESSION,
                     message=the_message,
                     # reply_to=,
                     # parse_mode="html",
