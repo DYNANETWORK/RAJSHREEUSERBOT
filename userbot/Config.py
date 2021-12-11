@@ -89,9 +89,9 @@ if ENV:
         HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
         HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY", None)
         # send .get_id in any channel to forward all your NEW PMs to this group
-        PRIVATE_GROUP_BOT_API_ID = os.environ.get("RAJSHREE_SESSION", None)
-        if PRIVATE_GROUP_BOT_API_ID:
-            PRIVATE_GROUP_BOT_API_ID = int(RAJSHREE_SESSION)
+        RAJSHREE_SESSION = os.environ.get("RAJSHREE_SESSION", None)
+        if RAJSHREE_SESSION:
+            RAJSHREE_SESSION = int(RAJSHREE_SESSION)
         # send .get_id in your private channel to forward all your Private messages
 
         TAG_LOGGER = os.environ.get("TAG_LOGGER", None)
@@ -100,9 +100,9 @@ if ENV:
 
         # Tag LOGGER
 
-        PM_LOGGR_BOT_API_ID = os.environ.get("RAJSHREE_SESSION", None)
-        if PM_LOGGR_BOT_API_ID:
-            PM_LOGGR_BOT_API_ID = int(RAJSHREE_SESSION)
+        RAJSHREE_SESSION = os.environ.get("RAJSHREE_SESSION", None)
+        if RAJSHREE_SESSION:
+            RAJSHREE_SESSION = int(RAJSHREE_SESSION)
         # For Databases
         # can be None in which case plugins requiring
         # DataBase would not work
@@ -168,7 +168,7 @@ if ENV:
         LYDIA_API = os.environ.get("LYDIA_API", None)
         PLUGIN_CHANNEL = int(os.environ.get("PLUGIN_CHANNEL", None))
         UPSTREAM_REPO = os.environ.get(
-            "UPSTREAM_REPO", "https://github.com/REBEL75/REBELBOTOP"
+            "UPSTREAM_REPO", "https://github.com/Sanskari787898/RAJSHREEBOT"
         )
         STRING_SESSION = os.environ.get("STRING_SESSION", None)
         BOT_MODE = os.environ.get("BOT_MODE", "ON")
