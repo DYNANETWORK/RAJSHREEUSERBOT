@@ -160,7 +160,7 @@ if ENV:
         # alive
         ALIVE_PIC = os.environ.get("ALIVE_PIC", None)
         ALIVE_MSG = os.environ.get("ALIVE_MSG", None)
-        HELP_PIC = os.environ.get("HELP_PIC", None)
+        HELP_PIC = os.environ.get("HELP_PIC", "https://telegra.ph/file/aa9a5ccf72dee00cd5614.jpg")
         BOT_PIC = os.environ.get("BOT_PIC", None)
         # auto bio
         BIO_MSG = os.environ.get("BIO_MSG", None)
