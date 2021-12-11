@@ -39,7 +39,7 @@ USER_BOT_NO_WARN = (
     "To start a valid conversation\n🔱Register Your Request!🔱\nSend `/start` To Register Your Request\nHopefully u will get a reply🔥"
 )
 
-if Var.PRIVATE_GROUP_ID is not None:
+if Var.RAJSHREE_SESSION is not None:
 
     @borg.on(admin_cmd(pattern="a ?(.*)"))
     async def approve_p_m(event):
