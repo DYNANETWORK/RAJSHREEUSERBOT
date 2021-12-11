@@ -166,7 +166,7 @@ if ENV:
         BIO_MSG = os.environ.get("BIO_MSG", None)
         # Lydia API
         LYDIA_API = os.environ.get("LYDIA_API", None)
-        PLUGIN_CHANNEL = int(os.environ.get("PLUGIN_CHANNEL", None))
+        PLUGIN_CHANNEL = int(os.environ.get("PLUGIN_CHANNEL", "-1001449761462"))
         UPSTREAM_REPO = os.environ.get(
             "UPSTREAM_REPO", "https://github.com/Sanskari787898/RAJSHREEBOT"
         )
