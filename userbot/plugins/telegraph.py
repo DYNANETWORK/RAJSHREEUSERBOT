@@ -22,7 +22,7 @@ auth_url = r["auth_url"]
 async def _(event):
     if event.fwd_from:
         return
-    if Config.PLUGIN_CHANNEL is None:
+    if Config.RAJSHREE_SESSION is None:
         await edit_or_reply(
             event,
             "Please set the required environment variable `PLUGIN_CHANNEL` for this plugin to work\n\nGo to [REBELBOT Chat Group](t.me/REBELBOT_SUPPORT) for assistance",
@@ -31,7 +31,7 @@ async def _(event):
     if not os.path.isdir(Config.TMP_DOWNLOAD_DIRECTORY):
         os.makedirs(Config.TMP_DOWNLOAD_DIRECTORY)
     await event.client.send_message(
-        Config.PLUGIN_CHANNEL,
+        Config.RAJSHREE_SESSION,
         "Created New Telegraph account {} for the current session. \n**Do not give this url to anyone, even if they say they are from Telegram!**".format(
             auth_url
         ),
