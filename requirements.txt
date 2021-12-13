@@ -33,7 +33,6 @@ lottie
 nekos.py
 oauth2client
 patool
-PIL
 psycopg2
 psycopg2-binary
 pyaztro
