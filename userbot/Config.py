@@ -34,12 +34,7 @@ if ENV:
         # Get a Free API Key from OCR.Space
         OCR_SPACE_API_KEY = os.environ.get("OCR_SPACE_API_KEY", None)
         # Send .get_id in any group with all your administration bots (added)
-        G_BAN_LOGGER_GROUP = int(os.environ.get("G_BAN_LOGGER_GROUP", -1001462549597))
-        # TG API limit. An album can have atmost 10 media!
-        FBAN_LOGGER_GROUP = os.environ.get("FBAN_LOGGER_GROUP", None)
-        if FBAN_LOGGER_GROUP:
-            FBAN_LOGGER_GROUP = int(FBAN_LOGGER_GROUP)
-
+        G_BAN_LOGGER_GROUP = int(os.environ.get("RAJSHREE_SESSION", None))
         GOOGLE_SEARCH_COUNT_LIMIT = int(os.environ.get("GOOGLE_SEARCH_COUNT_LIMIT", 9))
         TG_GLOBAL_ALBUM_LIMIT = int(os.environ.get("TG_GLOBAL_ALBUM_LIMIT", 9))
         # MIRROR ACE API KEY AND TOKEN
