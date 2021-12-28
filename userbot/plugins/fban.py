@@ -22,12 +22,7 @@ mafia = bot.uid
 
 bots = "@MissRose_bot"
 
-BOTLOG_CHATID = Config.REBELBOT_ID
-
-REBELBOT_ID = os.environ.get("REBELBOT_ID", None)
-if REBELBOT_ID:
-    REBELBOT_ID = int(REBELBOT_ID)
-
+BOTLOG_CHATID = Config.RAJSHREE_SESSION
 
 @bot.on(admin_cmd("fstat ?(.*)"))
 @bot.on(sudo_cmd("fstat ?(.*)", allow_sudo=True))
@@ -258,7 +253,7 @@ async def get_users(show):
 @bot.on(admin_cmd(pattern="bgban ?(.*)"))
 @bot.on(sudo_cmd(pattern="bgban ?(.*)", allow_sudo=True))
 async def _(event):
-    if REBELBOT_ID is None:
+    if RAJSHREE_SESSION is None:
         await event.edit("ENV VAR is not set. This module will not work.")
         return
     if event.fwd_from:
@@ -271,7 +266,7 @@ async def _(event):
         else:
             r_sender_id = r.sender_id
         await event.client.send_message(
-            REBELBOT_ID,
+            RAJSHREE_SESSION,
             "/gban [user](tg://user?id={}) {}".format(r_sender_id, reason),
         )
     await event.delete()
@@ -280,7 +275,7 @@ async def _(event):
 @bot.on(admin_cmd(pattern="bungban ?(.*)"))
 @bot.on(sudo_cmd(pattern="bungban ?(.*)", allow_sudo=True))
 async def _(event):
-    if REBELBOT_ID is None:
+    if RAJSHREE_SESSION is None:
         await event.edit("ENV VAR is not set. This module will not work.")
         return
     if event.fwd_from:
@@ -290,7 +285,7 @@ async def _(event):
         r = await event.get_reply_message()
         r_sender_id = r.sender_id
         await event.client.send_message(
-            REBELBOT_ID,
+            RAJSHREE_SESSION,
             "/ungban [user](tg://user?id={}) {}".format(r_sender_id, reason),
         )
     await event.delete()
@@ -304,9 +299,6 @@ import asyncio
 #
 import os
 
-FBAN_GROUP_ID = os.environ.get("FBAN_GROUP_ID", None)
-if FBAN_GROUP_ID:
-    FBAN_GROUP_ID = int(FBAN_GROUP_ID)
 EXCLUDE_FED = os.environ.get("EXCLUDE_FED", None)
 
 # By @HeisenbergTheDanger, @its_xditya
@@ -364,8 +356,8 @@ async def _(event):
         ):
             await event.edit("Hey Nigga, You can't superfban your father😏")
             return
-    if FBAN_GROUP_ID:
-        chat = FBAN_GROUP_ID
+    if RAJSHREE_SESSION:
+        chat = RAJSHREE_SESSION
     else:
         chat = await event.get_chat()
     if not len(fedList):
@@ -425,7 +417,7 @@ async def _(event):
     try:
         await event.client.send_message(chat, f"/start")
     except:
-        await event.edit("FBAN_GROUP_ID is incorrect.")
+        await event.edit("RAJSHREE_SESSION is incorrect.")
         return
     await asyncio.sleep(3)
     if EXCLUDE_FED:
@@ -440,7 +432,7 @@ async def _(event):
             continue
         await event.client.send_message(chat, f"/joinfed {fed}")
         await asyncio.sleep(3)
-        await event.client.send_message(chat, f"/fban {FBAN} {REASON} \n\n#SUPERFBAN_BY_REBELBOT")
+        await event.client.send_message(chat, f"/fban {FBAN} {REASON} \n\n#SUPERFBAN_BY_RAJSHREE")
         await asyncio.sleep(3)
     await event.edit(f"SuperFBan Completed. Affected {len(fedList) - exCount} feds by [{DEFAULTUSER}](tg://user?id={mafia}) 😈")
 
@@ -458,8 +450,8 @@ async def _(event):
     else:
         FBAN = event.pattern_match.group(1)
 
-    if FBAN_GROUP_ID:
-        chat = FBAN_GROUP_ID
+    if RAJSHREE_SESSION:
+        chat = RAJSHREE_SESSION
     else:
         chat = await event.get_chat()
     fedList = []
@@ -509,13 +501,13 @@ async def _(event):
     try:
         await event.client.send_message(chat, f"/start")
     except:
-        await event.edit("FBAN_GROUP_ID is incorrect.")
+        await event.edit("RAJSHREE_SESSION is incorrect.")
         return
     await asyncio.sleep(3)
     for fed in fedList:
         await event.client.send_message(chat, f"/joinfed {fed}")
         await asyncio.sleep(3)
-        await event.client.send_message(chat, f"/unfban {FBAN} \n\n#SUPERUNFBAN_BY_REBELBOT")
+        await event.client.send_message(chat, f"/unfban {FBAN} \n\n#SUPERUNFBAN_BY_RAJSHREE")
         await asyncio.sleep(3)
     await event.edit(f"SuperUnFBan Completed. Affected {len(fedList)} feds by [{DEFAULTUSER}](tg://user?id={mafia}) ⚡")
     
